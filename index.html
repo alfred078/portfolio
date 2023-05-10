@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width>
+        <title>EncriptaChallenge - ONE</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="imagenes/logo.svg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <header>
+                <div class="contenedor">
+                    <img class="logo" src="imagenes/logo.svg" alt="logo alura">  
+                    <h1 class="titulo_logo">Encriptador y Desencriptador de mensajes.</h1>
+                </div>
+            </header>
+
+                    <main>
+                        <div class="contenedor">
+                            <div class="encriptador">
+                                <form class="encriptador_form">
+                                    <div class="texto_en_area">
+                                            <textarea name="texto" id="texto"  placeholder="Ingrese el texto aquí" ></textarea>
+                                        
+                                            <div class="texto_info">
+                                                <div class="info">
+                                                    <img src="imagenes/exclamation-circle.svg">
+                                                    <p id="advertencia">Solo letras minúsculas</p>
+                                                </div>
+                                            </div>
+
+                                                <div class="btn">
+                                                    <button id="encri" class="btn_encriptar" type="button"><img src="imagenes/candado.svg"> Encriptar</button>
+                                                    <button id="desencri" class="btn_desencriptar" type="button"><img src="imagenes/candado-abierto.svg"> Desencriptar</button>
+                                                </div>
+                                    </div>
+                                </form>
+
+                                <div class="resultado">
+
+                                    <div class="contenedor_resultado">
+                                        <div class="contenido_no_resuelto" id="noResuelto">
+                                            <div class="imagen_resultado">
+                                                <img src="imagenes/buscador.png" alt="imagen buscador">
+                                            </div>
+                                            <p>Ningún mensaje fué <br>encontrado</p>
+                                            <p>Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+                                            </div>
+
+                                            <div class="contenido_resuelto" id = "resuelto">
+                                                <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
+                                                <button id="copiar" type="button"><img src="imagenes/copia.svg"> Copiar</button>
+                                            </div>
+                                            
+                                        </div>
+                                       
+                                    </div>
+
+                                </div>
+                                <footer>
+                                    <p class="copyright">© Creado por Alfredo Rafael Allende</p>
+                                </footer> 
+                            </div>
+                    
+                        </div>
+                    
+                     </main>
+                        
+                     
+            <script src="script.js"></script>
+        </body>
+</html>
